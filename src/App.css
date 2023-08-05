@@ -20,13 +20,20 @@ li{
   padding: 10px;
   margin: 10x;
 }
+.login-btn{
+  padding: 0px 20px;
+}
+
+
 .filter-div{
   padding: 10px ;
+  display: flex;
 }
 .filter-btn{
   margin: 7px;
   cursor: pointer;
 }
+
 /* Restaurant CSS */
 .res-container{
   position: relative;
@@ -45,6 +52,7 @@ li{
  } 
  .filter-btn{
   border: none;
+  margin-left: 20px;
   padding: 5px;
   border-radius: 10px ;
   background-color: aquamarine;
@@ -52,13 +60,31 @@ li{
  .filter-btn:hover{
    border: 1px solid darkcyan ; 
  }
+ .search{
+  margin: 7px;  
+}
+.search-input{
+ padding: 2px 2px;
+}
+.search-btn{
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px ;
+  background-color: aquamarine;
+}
+.search-btn:hover{
+  border: 1px solid darkcyan ; 
+}
+ /* Restaurant Body  */
 .res-card{
   padding: 5px;
   width: 200px;
-  margin: 5px;
-  background-color: #f0f0f0;
+  margin: 5px 5px 0px 5px; 
+  background-color: #F4F2DE;
+ 
 }
-
 .res-card:hover{
   border: 1px solid black;
   border-radius: 10px;
@@ -69,6 +95,11 @@ li{
   height: 150px;
   border-radius: 20px;
 }
+/* .res-details{
+  display: grid;
+  margin: 0;
+  line-height: 0;
+} */
 .star-div {
   padding: 0 5px;
   background-color: aqua;

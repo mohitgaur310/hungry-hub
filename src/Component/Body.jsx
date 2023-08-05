@@ -8,6 +8,7 @@ import Shimmer from "./Shimmer";
 const Body=()=>{
 
     const [restaurantList,setRestaurantsList]=useState([])
+    const [searchValue,setSearchValue]=useState("")
     const handleChange =(e)=>{
         setRestaurantsList(resData.filter(x =>x.info.avgRating >4 ))
     }
@@ -20,15 +21,24 @@ const Body=()=>{
         );
          const json=await data.json()
          setRestaurantsList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+
+        }
+    const searchValueHandler=(e)=>{
+        setSearchValue(e.target.value)
+    }
+    const btnHandle =()=>{  
+        const filterData= restaurantList.filter((e) => e?.info?.name?.toLowerCase().includes(searchValue.toLowerCase()))
+        setRestaurantsList(filterData)
+
     }
     
-    if(restaurantList?.length === 0){
-        return  <Shimmer /> 
-    }
-    
-    return(
+    return (restaurantList?.length === 0) ? <Shimmer /> : (
         <div className="body-container">
          <div className="filter-div">
+                <div className="search">
+                    <input className="search-input" value={searchValue} onChange={searchValueHandler}  type="text" />
+                    <button onClick={btnHandle} className="search-btn">Search</button>
+                </div>
                 <button onClick={handleChange} className="filter-btn" value="top-rated">Top Rated</button>
          </div>
 
