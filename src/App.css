@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.logo{
+  width: 150px;
+  height: 100px;
+  border-radius: 50% ;
+}
+.nav-items ul {
+  padding: 0 50px;
+  display: flex;
+  font-size: 24px;
+}
+li{
+  list-style: none;
+}
+.nav-items ul li {
+  padding: 10px;
+  margin: 10x;
+}
+.filter-div{
+  padding: 10px ;
+}
+.filter-btn{
+  margin: 7px;
+  cursor: pointer;
+}
+/* Restaurant CSS */
+.res-container{
+  position: relative;
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
   align-items: center;
+  border-radius: 10px;
+}
+ .filter-div{
+  margin-top: 5px 0px;
+  position: relative;
+  top: 15px;
+  left: 5.5%;
+ } 
+ .filter-btn{
+  border: none;
+  padding: 5px;
+  border-radius: 10px ;
+  background-color: aquamarine;
+ }
+ .filter-btn:hover{
+   border: 1px solid darkcyan ; 
+ }
+.res-card{
+  padding: 5px;
+  width: 200px;
+  margin: 5px;
+  background-color: #f0f0f0;
+}
+
+.res-card:hover{
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.res-logo{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+}
+.star-div {
+  padding: 0 5px;
+  background-color: aqua;
+  max-width: 50px;
+}
+
+/* shimmer Card */
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.shimmer-card{
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  background-color: #f0f0f0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shimmer-btn{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 15px;
+  width: 50px;
+  top: 20px;
+  left: 7%; 
+  padding: 5px;
+  border-radius: 10px ;
+  background-color: aquamarine;
+}
+.shimmer-logo{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  background-color:white;
 }
