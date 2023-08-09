@@ -5,11 +5,11 @@ const RestaurantComponent =(props)=>{
     
     const {resData} =props
     const {name,cuisines,costForTwo,avgRating,sla}= resData.info
-        // console.log(resData);
+   
+   
     return(
-        
-        <div className="res-card">
-            {/*this is the way we write comments in jsx */} 
+    <div>        
+        <div className="res-card"  >
             <img 
             className="res-logo"
             alt="res-logo.png"
@@ -32,7 +32,8 @@ const RestaurantComponent =(props)=>{
             </div>
         </div>
         </div>
-
+   
+    </div>
     )
 }
 

@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -81,6 +86,8 @@ li{
 .res-card{
   padding: 5px;
   width: 200px;
+  text-decoration: none;
+  list-style: none;
   margin: 5px 5px 0px 5px; 
   background-color: #F4F2DE;
  
@@ -101,6 +108,8 @@ li{
   line-height: 0;
 } */
 .star-div {
+
+  list-style: none;
   padding: 0 5px;
   background-color: aqua;
   max-width: 50px;
@@ -137,4 +146,53 @@ li{
   height: 150px;
   border-radius: 20px;
   background-color:white;
+}
+
+/* Resturent Menu */
+.menu-body{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.res-details{
+  margin: 10%;
+}
+.custom-link{
+  text-decoration: none; /* Removes the underline */
+  color: #333; /* Changes the text color to a different value */
+}
+.menu-body{
+  background-color: #F7F5F2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  /* justify-items: center; */
+}
+.res-outlet{
+  margin-top: 25px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #7F8487;
+}
+ h4,h5,h6{
+  margin: 18px;
+  line-height: 0;
+  padding: 0;
+  color: #DDE6ED;
+}
+
+.outlet-name{
+  color: #333;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.outlet-details{
+  color: #7F8487;
+}
+.outlet-rating{
+  margin-top: 20px;
 }

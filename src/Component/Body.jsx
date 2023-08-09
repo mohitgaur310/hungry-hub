@@ -3,6 +3,7 @@ import '../App.css'
 import RestaurantComponent from "./RestaurantComponent";
 import resData from "../utils/mockData"
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 const Body=()=>{
@@ -51,8 +52,9 @@ const Body=()=>{
 
             <div className="res-container">
             {filterList?.map((res,index)=>
-                <RestaurantComponent  key={index} resData={res} />
-            )}
+                <Link className="custom-link" to={"/restaurant/"+res.info.id}  key={res.info.id}>
+                <RestaurantComponent  resData={res} />
+                </Link>)}
             </div>
         </div>
         
